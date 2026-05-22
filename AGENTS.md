@@ -55,6 +55,44 @@ Preferências:
 
 ---
 
+# Infraestrutura
+
+- Banco principal: PostgreSQL
+- Banco vetorial: PGVector
+- Ambiente Docker/EasyPanel
+- Nunca hardcodar credenciais
+- Utilizar variáveis de ambiente
+- Ler configurações do arquivo `.env`
+
+---
+
+# Banco de Dados
+
+A aplicação utiliza PostgreSQL.
+
+## Configuração esperada
+
+```env
+DB_TYPE=postgresdb
+DB_POSTGRESDB_HOST=automatize_pgvector
+DB_POSTGRESDB_PORT=5432
+DB_POSTGRESDB_DATABASE=ctesouro
+DB_POSTGRESDB_USER=postgres
+DB_POSTGRESDB_PASSWORD=${SECRET}
+```
+
+Regras:
+
+- Utilizar PostgreSQL como banco principal
+- Não utilizar SQLite
+- Todas as migrations devem ser compatíveis com PostgreSQL 16+
+- Utilizar UUID como chave primária
+- Utilizar timezone UTC nas tabelas
+- Preferir Prisma ORM
+- Utilizar PGVector para funcionalidades de IA/RAG
+
+---
+
 # Identidade Visual
 
 ## Logo Oficial
