@@ -92,6 +92,9 @@
 - **FR-003**: Users MUST be able to [key interaction, e.g., "reset their password"]
 - **FR-004**: System MUST [data requirement, e.g., "persist user preferences"]
 - **FR-005**: System MUST [behavior, e.g., "log all security events"]
+- **UX-001**: User-facing changes MUST define loading, empty, error, success, and permission-limited states where applicable
+- **PERF-001**: Feature MUST meet [measurable performance budget or NEEDS CLARIFICATION: budget not specified]
+- **TEST-001**: Changed behavior MUST be covered by automated tests or an explicit risk-based exception
 
 *Example of marking unclear requirements:*
 
@@ -116,6 +119,7 @@
 - **SC-002**: [Measurable metric, e.g., "System handles 1000 concurrent users without degradation"]
 - **SC-003**: [User satisfaction metric, e.g., "90% of users successfully complete primary task on first attempt"]
 - **SC-004**: [Business metric, e.g., "Reduce support tickets related to [X] by 50%"]
+- **SC-005**: [Quality metric, e.g., "All automated tests for changed behavior pass in CI"]
 
 ## Assumptions
 

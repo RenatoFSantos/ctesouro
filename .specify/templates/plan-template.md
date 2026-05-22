@@ -40,7 +40,20 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- **Code Quality**: Plan identifies affected modules, existing conventions to
+  follow, formatter/linter/type-check commands, and any justified deviations.
+- **Test Strategy**: Plan lists unit, integration, contract, end-to-end, or
+  manual validation coverage for every changed behavior. Deferred tests require
+  risk, owner, and follow-up.
+- **User Experience Consistency**: Plan covers loading, empty, error, success,
+  permission-limited, responsive, keyboard, and assistive technology states for
+  user-facing changes.
+- **Performance Budgets**: Plan defines measurable goals or documents why no new
+  budget is needed, plus the validation method for loading, rendering, storage,
+  payload, or external-call impact.
+- **Maintainable Delivery**: Plan decomposes work into independently reviewable
+  user-story slices and documents migration, compatibility, and rollback notes
+  when cross-cutting behavior changes.
 
 ## Project Structure
 
